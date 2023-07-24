@@ -4,6 +4,7 @@
 
 CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
 PROJECT ( YUV C CXX )	# "C" is required even for C++ projects
+
 OPTION( TEST "Built unit tests" OFF )
 
 SET ( ly_base_dir	${PROJECT_SOURCE_DIR} )
