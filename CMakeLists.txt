@@ -2,8 +2,9 @@
 # Originally created for "roxlu build system" to compile libyuv on windows
 # Run with -DTEST=ON to build unit tests
 
-PROJECT ( YUV C CXX )	# "C" is required even for C++ projects
 CMAKE_MINIMUM_REQUIRED( VERSION 2.8 )
+PROJECT ( YUV C CXX )	# "C" is required even for C++ projects
+
 OPTION( TEST "Built unit tests" OFF )
 
 SET ( ly_base_dir	${PROJECT_SOURCE_DIR} )
@@ -88,4 +89,3 @@ INSTALL ( DIRECTORY ${PROJECT_SOURCE_DIR}/include/		DESTINATION include )
 
 # create the .deb and .rpm packages using cpack
 INCLUDE ( CM_linux_packages.cmake )
-
